@@ -1,0 +1,40 @@
+C:\_PIERWORYS_DELL\PROBA-MILION\forge-configurator-inventor-master\forge-configurator-inventor-master\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.Inventor.addin
+C:\_PIERWORYS_DELL\PROBA-MILION\forge-configurator-inventor-master\forge-configurator-inventor-master\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.dll
+C:\_PIERWORYS_DELL\PROBA-MILION\forge-configurator-inventor-master\forge-configurator-inventor-master\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.pdb
+C:\_PIERWORYS_DELL\PROBA-MILION\forge-configurator-inventor-master\forge-configurator-inventor-master\AppBundles\ExportBOMPlugin\bin\Release\Autodesk.Forge.DesignAutomation.Inventor.Utils.dll
+C:\_PIERWORYS_DELL\PROBA-MILION\forge-configurator-inventor-master\forge-configurator-inventor-master\AppBundles\ExportBOMPlugin\bin\Release\Newtonsoft.Json.dll
+C:\_PIERWORYS_DELL\PROBA-MILION\forge-configurator-inventor-master\forge-configurator-inventor-master\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.csproj.CoreCompileInputs.cache
+C:\_PIERWORYS_DELL\PROBA-MILION\forge-configurator-inventor-master\forge-configurator-inventor-master\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.csproj.CopyComplete
+C:\_PIERWORYS_DELL\PROBA-MILION\forge-configurator-inventor-master\forge-configurator-inventor-master\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.dll
+C:\_PIERWORYS_DELL\PROBA-MILION\forge-configurator-inventor-master\forge-configurator-inventor-master\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.pdb
+C:\_PIERWORYS_DELL\PROBA-MILION\forge-configurator-inventor-master\forge-configurator-inventor-master\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.csproj.AssemblyReference.cache
+C:\_ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.Inventor.addin
+C:\_ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.dll
+C:\_ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.pdb
+C:\_ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\bin\Release\Autodesk.Forge.DesignAutomation.Inventor.Utils.dll
+C:\_ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\bin\Release\Newtonsoft.Json.dll
+C:\_ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.csproj.AssemblyReference.cache
+C:\_ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.csproj.CoreCompileInputs.cache
+C:\_ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\obj\Release\ExportBO.1B08A0D8.Up2Date
+C:\_ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.dll
+C:\_ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.pdb
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.Inventor.addin
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.pdb
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\bin\Release\Autodesk.Forge.DesignAutomation.Inventor.Utils.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\bin\Release\Newtonsoft.Json.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.csproj.AssemblyReference.cache
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.csproj.CoreCompileInputs.cache
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\obj\Release\ExportBO.1B08A0D8.Up2Date
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\unzip\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.pdb
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.Inventor.addin
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportBOMPlugin\bin\Release\ExportBOMPlugin.pdb
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportBOMPlugin\bin\Release\Autodesk.Forge.DesignAutomation.Inventor.Utils.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportBOMPlugin\bin\Release\Newtonsoft.Json.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.csproj.AssemblyReference.cache
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.csproj.CoreCompileInputs.cache
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportBOMPlugin\obj\Release\ExportBO.1B08A0D8.Up2Date
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportBOMPlugin\obj\Release\ExportBOMPlugin.pdb
