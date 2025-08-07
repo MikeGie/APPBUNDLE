@@ -1,0 +1,80 @@
+﻿/* Language grouping styles for checkboxTable.css */
+
+.group-header-row {
+    background-color: #f8f9fa !important;
+    border-bottom: 2px solid #e0e0e0 !important;
+    cursor: default !important;
+}
+
+    .group-header-row:hover {
+        background-color: #f8f9fa !important;
+    }
+
+    .group-header-row .BaseTable__row-cell {
+        border-bottom: none !important;
+        font-weight: bold;
+        color: #0696d7;
+    }
+
+.show-more-row {
+    background-color: #f0f8ff !important;
+    font-style: italic;
+    color: #666;
+    cursor: pointer;
+}
+
+    .show-more-row:hover {
+        background-color: #e6f3ff !important;
+    }
+
+.project-selected {
+    background-color: #e1f2fa !important;
+}
+
+    .project-selected:hover {
+        background-color: #9bdaf8 !important;
+    }
+
+/* Ensure group headers span full width */
+.group-header-row .BaseTable__row-cell:first-child {
+    border-right: none !important;
+}
+
+/* Indent project rows slightly under groups */
+.BaseTable__row:not(.group-header-row):not(.show-more-row) .BaseTable__row-cell {
+    padding-left: 20px;
+}
+
+/* Language group header specific styling */
+.language-group-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
+    color: #0696d7;
+    padding: 8px 12px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+}
+
+    .language-group-header .project-count {
+        font-size: 12px;
+        color: #666;
+        font-weight: normal;
+    }
+
+/* Adjust table row heights for better grouping visual */
+.BaseTable__row {
+    min-height: 40px;
+}
+
+.group-header-row {
+    min-height: 44px;
+}
+
+    /* Hide checkbox column for group headers */
+    .group-header-row .BaseTable__row-cell:first-child,
+    .show-more-row .BaseTable__row-cell:first-child {
+        visibility: hidden;
+    }

@@ -1,0 +1,172 @@
+/////////////////////////////////////////////////////////////////////
+// Copyright (c) Autodesk, Inc. All rights reserved
+// Written by Forge Design Automation team for Inventor
+//
+// Permission to use, copy, modify, and distribute this software in
+// object code form for any purpose and without fee is hereby granted,
+// provided that the above copyright notice appears in all copies and
+// that both that copyright notice and the limited warranty and
+// restricted rights notice below appear in all supporting
+// documentation.
+//
+// AUTODESK PROVIDES THIS PROGRAM "AS IS" AND WITH ALL FAULTS.
+// AUTODESK SPECIFICALLY DISCLAIMS ANY IMPLIED WARRANTY OF
+// MERCHANTABILITY OR FITNESS FOR A PARTICULAR USE.  AUTODESK, INC.
+// DOES NOT WARRANT THAT THE OPERATION OF THE PROGRAM WILL BE
+// UNINTERRUPTED OR ERROR FREE.
+/////////////////////////////////////////////////////////////////////
+
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import './parametersContainer.css';
+import Parameter from './parameter';
+import { getActiveProject, getParameters, getUpdateParameters, modalProgressShowing, updateFailedShowing, errorData } from '../reducers/mainReducer';
+import { fetchParameters, resetParameters, updateModelWithParameters } from '../actions/parametersActions';
+import { showModalProgress, showUpdateFailed, invalidateDrawing } from '../actions/uiFlagsActions';
+import Button from '@hig/button';
+import Tooltip from '@hig/tooltip';
+import { Alert24 } from "@hig/icons";
+
+import ModalProgress from './modalProgress';
+import ModalFail from './modalFail';
+import { fullWarningMsg } from '../utils/conversion';
+import { getLanguage } from '../reducers/uiFlagsReducer';
+
+export class ParametersContainer extends Component {
+
+    componentDidMount() {
+        this.props.fetchParameters(this.props.activeProject.id);
+    }
+
+    componentDidUpdate(prevProps) {
+        // fetch parameters when params UI was active before projects initialized
+        if (this.props.activeProject.id !== prevProps.activeProject.id)
+            this.props.fetchParameters(this.props.activeProject.id);
+    }
+
+    updateClicked() {
+        this.props.updateModelWithParameters(this.props.activeProject.id, this.props.projectUpdateParameters);
+        // mark drawing as not valid if any available
+        this.props.invalidateDrawing();
+    }
+
+    onUpdateFailedCloseClick() {
+        this.props.showUpdateFailed(false);
+    }
+
+    onModalProgressClose() {
+        this.props.hideModalProgress();
+    }
+
+    render() {
+        const buttonLabels = {
+            reset: {
+                pl: "Resetuj",
+                de: "Zurucksetzen",
+                en: "Reset"
+            },
+            generate: {
+                pl: "Generuj",
+                de: "Generieren",
+                en: "Generate"
+            },
+            updatingProject: {
+                pl: "Aktualizowanie projektu",
+                de: "Projekt aktualisieren",
+                en: "Updating the project"
+            },
+            generationComplete: {
+                pl: "Generowanie zakonczone",
+                de: "Fertigstellung der Zeichnung abgeschlossen",
+                en: "Generation complete"
+            }
+        };
+        const { language = 'en' } = this.props; // Pobierz jêzyk
+        const resetLabel = buttonLabels.reset[language] || buttonLabels.reset.en;
+        const generateLabel = buttonLabels.generate[language] || buttonLabels.generate.en;
+        const updatingProjectLabel = buttonLabels.updatingProject[language] || buttonLabels.updatingProject.en;
+        const generationCompleteLabel = buttonLabels.generationComplete[language] || buttonLabels.generationComplete.en;
+        const parameterList = this.props.activeProject ? this.props.projectUpdateParameters : [];
+        const buttonsContainerClass = parameterList ? "buttonsContainer" : "buttonsContainer hidden";
+
+        // if model adopted with warning - then button should became white and have a tooltip with warning details
+        const adoptWarning = this.props.adoptWarning;
+        const tooltipProps = adoptWarning ? { openOnHover: true, content: () => <div className="warningButtonTooltip">{ adoptWarning }</div>  } : { open: false };
+        const buttonProps = adoptWarning ? { type:"secondary", icon: <Alert24 style={ { color: "orange" }} /> } : { type: "primary" };
+       
+        return (
+            <div className="parametersContainer">
+                <div className="pencilContainer">
+                </div>
+                <div className="parameters">
+                {
+                    parameterList ?
+                        parameterList.map((parameter, index) => (<Parameter key={index} parameter={parameter}/>))
+                        : "No parameters"
+                }
+                </div>
+                <hr className="parametersSeparator"/>
+                <div className={buttonsContainerClass}>
+                    <Button style={{width: '225px'}}
+                        size="standard"
+                        title={resetLabel}
+                        type="secondary"
+                        width="grow"
+                        onClick={() => {this.props.resetParameters(this.props.activeProject.id, this.props.projectSourceParameters);}}
+                    />
+                    <div style={{width: '14px'}}/>
+                    <div width="grow" /*this div makes the size of the Button below not to be broken by the encapsulating Tooltip*/>
+                        <Tooltip { ...tooltipProps } className="paramTooltip" anchorPoint="top-center">
+                            <Button id="updateButton"
+                                style={{width: '225px'}}
+                                { ...buttonProps }
+                                size="standard"
+                                title={generateLabel}
+                                width="grow"
+                                onClick={() => this.updateClicked()}/>
+                        </Tooltip>
+                    </div>
+
+                    {this.props.modalProgressShowing &&
+                        <ModalProgress
+                            open={this.props.modalProgressShowing}
+                        title={updatingProjectLabel}
+                        doneTitle={generationCompleteLabel}
+                            label={this.props.activeProject.id}
+                            icon="/Assembly_icon.svg"
+                            onClose={() => this.onModalProgressClose()}
+                            warningMsg={this.props.adoptWarning}
+                        />
+                    }
+                    {this.props.updateFailedShowing &&
+                        <ModalFail
+                            open={this.props.updateFailedShowing}
+                            title="Generowanie nieudane"
+                            contentName="Project:"
+                            label={this.props.activeProject.id}
+                            onClose={() => this.onUpdateFailedCloseClick()}
+                            errorData={this.props.errorData}/>
+                    }
+                </div>
+            </div>
+        );
+    }
+}
+
+/* istanbul ignore next */
+export default connect(function (store) {
+    const activeProject = getActiveProject(store);
+    const adoptWarning = fullWarningMsg(activeProject.adoptWarnings);
+
+    return {
+        activeProject: activeProject,
+        modalProgressShowing: modalProgressShowing(store),
+        updateFailedShowing: updateFailedShowing(store),
+        errorData: errorData(store),
+        projectSourceParameters: getParameters(activeProject.id, store),
+        projectUpdateParameters: getUpdateParameters(activeProject.id, store),
+        adoptWarning: adoptWarning,
+        language: getLanguage(store) || 'en' // Domyœlny jêzyk to 'en'
+    };
+}, { fetchParameters, resetParameters, updateModelWithParameters, showModalProgress, showUpdateFailed, invalidateDrawing,
+    hideModalProgress: () => async (dispatch) => { dispatch(showModalProgress(false)); } })(ParametersContainer);
