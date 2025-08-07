@@ -1,0 +1,9 @@
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportSTEPPlugin\obj\Debug\ExportSTEPPlugin.csproj.AssemblyReference.cache
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportSTEPPlugin\obj\Debug\ExportSTEPPlugin.csproj.CoreCompileInputs.cache
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportSTEPPlugin\bin\Debug\Autodesk.Forge.DesignAutomation.Inventor.Utils.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportSTEPPlugin\bin\Debug\Newtonsoft.Json.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportSTEPPlugin\obj\Debug\ExportST.8AA9F7E3.Up2Date
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportSTEPPlugin\bin\Debug\ExportSTEPPlugin.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportSTEPPlugin\bin\Debug\ExportSTEPPlugin.pdb
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportSTEPPlugin\obj\Debug\ExportSTEPPlugin.dll
+C:\00 ZLECENIA\04 PJK\01\01 P MILION\unzip\kopia\AppBundles\ExportSTEPPlugin\obj\Debug\ExportSTEPPlugin.pdb

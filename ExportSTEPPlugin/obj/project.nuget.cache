@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "cQkt1DeIjjWx2rYrvVTYvNL6m9BSCB/R8j1XycbKh1eO72T3fPzJCpFtK8aRDIuph4RuAYEkwgzm0BuDtZOXWA==",
+  "success": true,
+  "projectFilePath": "C:\\00 ZLECENIA\\04 PJK\\01\\01 P MILION\\unzip\\unzip\\AppBundles\\ExportSTEPPlugin\\ExportSTEPPlugin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mgier\\.nuget\\packages\\autodesk.forge.designautomation.inventor.utils\\2.0.0\\autodesk.forge.designautomation.inventor.utils.2.0.0.nupkg.sha512",
+    "C:\\Users\\mgier\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\mgier\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

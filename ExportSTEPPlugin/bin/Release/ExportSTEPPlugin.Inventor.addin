@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Addin Type="Plugin">
+	<ClassId>{e6bce479-7c6a-40b9-b5aa-358af9571eeb}</ClassId>
+	<ClientId>{e6bce479-7c6a-40b9-b5aa-358af9571eeb}</ClientId>
+	<DisplayName>ExportSTEPPlugin</DisplayName>
+	<Description>Export STEP functionality</Description>
+	<Assembly>ExportSTEPPlugin.dll</Assembly>
+	<LoadOnStartUp>1</LoadOnStartUp>
+	<UserUnloadable>1</UserUnloadable>
+	<Hidden>0</Hidden>
+	<SupportedSoftwareVersionGreaterThan>23..</SupportedSoftwareVersionGreaterThan>
+	<DataVersion>1</DataVersion>
+	<UserInterfaceVersion>1</UserInterfaceVersion>
+</Addin>
